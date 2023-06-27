@@ -1,0 +1,82 @@
+
+ .board-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .board-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .winner-message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #57a776;
+    font-weight: bold;
+  }
+  
+  .draw-message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #f7921e;
+    font-weight: bold;
+  }
+  
+  .play-again-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .play-again-button:hover {
+    background-color: #e1e1e1;
+  }
+  
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .square:hover {
+    background-color: #e1e1e1;
+  }
+  
+  /* Add animation for winning squares */
+  .square.winning-square {
+    background-color: #57a776;
+    color: white;
+    animation: pulse 0.5s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+   
